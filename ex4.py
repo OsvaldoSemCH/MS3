@@ -14,7 +14,7 @@ alto = 9
 while(baixo <= alto and not achou):
     medio = (baixo + alto) >> 1
     if(busca < vet[medio]):
-        alto = medio + 1
+        alto = medio - 1
     elif(busca > vet[medio]):
         baixo = medio + 1
     else: achou = True
